@@ -14,3 +14,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+<h2 align="center">🐦 Github Statistics </h2>
+<p align="center">
+<img src="https://github-readme-stats.vercel.app/api?username=khabdrick&layout=compact&hide=html&theme=jolly" alt="khabdrick" />&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
