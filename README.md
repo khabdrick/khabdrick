@@ -15,7 +15,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
- <img src="https://komarev.com/ghpvc/?username=harshcsper" alt="harshcsper" /> 
+ <img src="https://komarev.com/ghpvc/?username=khabdrick" alt="khabdrick" /> 
 
 <h2 align="center"> 👨‍💻  Technology Stack</h2>
 <p align="center">
