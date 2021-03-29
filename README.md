@@ -37,11 +37,6 @@ Here are some ideas to get you started:
 </p>
 
 
-<h2 align="center">📊 Github Statistics </h2>
-<p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=khabdrick&layout=compact&hide=html&theme=jolly" alt="khabdrick" />&nbsp;&nbsp;&nbsp;&nbsp;
-</p>
-
 <h2 align="center">📫 Reach out to me on</h2>
 <p align="center">
   <a target="_blank"href="https://www.linkedin.com/in/muhammed-ali-50a784173/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
