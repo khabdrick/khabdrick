@@ -1,4 +1,4 @@
-&nbsp;&nbsp;&nbsp;&nbsp; ### Hi there 👋
+&nbsp;&nbsp;&nbsp;&nbsp; ###Hi there 👋
 
 <!--
 **khabdrick/khabdrick** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
