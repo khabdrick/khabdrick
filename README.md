@@ -15,7 +15,12 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
+
+
  <img src="https://komarev.com/ghpvc/?username=khabdrick" alt="khabdrick" /> 
+ 
+ 
+ <br><br>
 
 <h2 align="center"> 👨‍💻  Technology Stack</h2>
 <p align="center">
@@ -36,6 +41,9 @@ Here are some ideas to get you started:
   
 </p>
 
+
+<br>
+<br>
 
 <h2 align="center">📫 Reach out to me on</h2>
 <p align="center">
