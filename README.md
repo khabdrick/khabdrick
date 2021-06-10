@@ -14,11 +14,10 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-<p align="center">
 
- &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://komarev.com/ghpvc/?username=khabdrick" alt="khabdrick" /> 
- 
-</p> 
+
+ &nbsp;&nbsp;&nbsp;&nbsp;<img  align="center" src="https://komarev.com/ghpvc/?username=khabdrick" alt="khabdrick" /> 
+  
  <br><br>
 
 <h2 align="center"> 👨‍💻  Technology Stack</h2>
