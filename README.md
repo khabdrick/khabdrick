@@ -41,6 +41,9 @@ Here are some ideas to get you started:
 
 
 <br>
+<p align="center">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=khabdrick&layout=compact)](https://github.com/gaurav3435/github-readme-stats" alt="khabdrick" />
+</p>
 <br>
 
 <h2 align="center">📫 Reach out to me on</h2>
