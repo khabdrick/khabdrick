@@ -1,0 +1,320 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "listMatches",
+    "description": "List matches.",
+    "version": ""
+  },
+  "servers": [
+    {
+      "url": "https://fixtures.bayesesports.com/api/v1"
+    }
+  ],
+  "paths": {
+    "/match": {
+      "description": "Provides list of Matches",
+      "get": {
+        "description": "Operation to fetch list of matches. Get [bearerAuth](https://fixtures.bayesesports-staging.com/api/v1/docs#section/Authentication/bearerAuth)",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "perid",
+            "required": false,
+            "description": "Filter the returned list by perid.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "title",
+            "required": false,
+            "description": "Array of integers <int64\\>. Filter by a specific title id with `title=2` or multiple titles with `title=4&title=2`.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "properties": {
+                  "title": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "in": "query",
+            "name": "title__slug",
+            "required": false,
+            "description": "Filter by title slug.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "date_start",
+            "required": false,
+            "description": "string <date-time>. Filter by a specific date `date_start=2019-01-01` or filter by a date range with `date_start__gte=2019-01-01` and `date_start__lte=2019-01-31` or `date_start__gt=2019-01-01` and `date_start__lt=2019-01-31`.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "date_start__lt",
+            "required": false,
+            "description": "string <date-time>.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "results": {
+                        "properties": {
+                          "version": {
+                            "type": "integer",
+                            "example": 0
+                          },
+                          "last_modified": {
+                            "type": "integer",
+                            "example": 0
+                          },
+                          "state": {
+                            "type": "integer",
+                            "example": 0
+                          },
+                          "state_label": {
+                            "type": "string",
+                            "example": 0
+                          },
+                          "date_start": {
+                            "type": "integer",
+                            "example": "2019-08-24T14:15:22Z"
+                          },
+                          "title": {
+                            "properties": {
+                              "name": {
+                                "type": "string"
+                              },
+                              "abbreviation": {
+                                "type": "string"
+                              },
+                              "perid": {
+                                "type": "string"
+                              },
+                              "id": {
+                                "type": "integer"
+                              },
+                              "slug": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "tournament": {
+                            "properties": {
+                              "abbreviation": {
+                                "type": "string"
+                              },
+                              "tier": {
+                                "type": "string"
+                              },
+                              "match_format_type": {
+                                "type": "string"
+                              },
+                              "match_format_value": {
+                                "type": "string"
+                              },
+                              "date_start": {
+                                "type": "string",
+                                "example": "2019-08-24"
+                              },
+                              "date_end": {
+                                "type": "string",
+                                "example": "2019-08-24"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "full_name": {
+                                "type": "string"
+                              },
+                              "perid": {
+                                "type": "string"
+                              },
+                              "id": {
+                                "type": "integer"
+                              }
+                            }
+                          },
+                          "stage": {
+                            "properties": {
+                              "property1": {
+                                "type": "string"
+                              },
+                              "property2": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "teams": {
+                            "properties": {
+                              "abbreviation": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "logo_icon": {
+                                "type": "string"
+                              },
+                              "logo": {
+                                "type": "string"
+                              },
+                              "perid": {
+                                "type": "string"
+                              },
+                              "id": {
+                                "type": "integer"
+                              }
+                            }
+                          },
+                          "results": {
+                            "properties": {
+                              "team_id": {
+                                "type": "integer"
+                              },
+                              "score": {
+                                "type": "integer"
+                              },
+                              "winner": {
+                                "type": "boolean"
+                              }
+                            }
+                          },
+                          "coverages": {
+                            "properties": {
+                              "types": {
+                                "type": "string"
+                              },
+                              "provider": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "identifiers": {
+                            "properties": {
+                              "value": {
+                                "type": "string"
+                              },
+                              "type": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "perid": {
+                            "type": "string"
+                          },
+                          "id": {
+                            "type": "integer"
+                          }
+                        }
+                      },
+                      "next": {
+                        "type": "string",
+                        "example": "http://example.com"
+                      },
+                      "count": {
+                        "type": "integer"
+                      },
+                      "previous": {
+                        "type": "object",
+                        "example": "http://example.com"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "detail": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized Client",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "detail": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "detail": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "description": ""
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "detail": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "description": ""
+          }
+        }
+      }
+    }
+  }
+}
